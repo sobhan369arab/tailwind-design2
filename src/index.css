@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family:'Dana-Regular' ;
+        src: url(./Fonts/Dana-family/Dana-Regular.ttf);
+    }
+    @font-face {
+        font-family:'Dana-Bold' ;
+        src: url(./Fonts/Dana-family/Dana-Bold.ttf);
+    }
+    @font-face {
+        font-family:'Dana-Medium' ;
+        src: url(./Fonts/Dana-family/Dana-Medium.ttf);
+    }
+}
+@layer utilities{
+    .BoxShadow1{ box-shadow: 4px 4px 0px 0px #444; transition: 0.2s;}
+    .BoxShadow2{ box-shadow: 3px 2px 1px 0px #222; transition: 0.1s;}
+
+    .all{
+        @apply font-['Dana-Medium'] cursor-default relative  
+    }
+    .container{
+        @apply w-[75%] h-full m-auto;
+    }
+
+    .text1{
+        @apply  font-['Dana-Bold'] sm:text-[32px] lg:text-[34px] xl:text-[40px] md:pt-2 pt-4 ;
+    }
+    .text2{
+        @apply text-[8px] sm:text-[11px] md:text-sm lg:text-base;
+    }
+    .text3{
+        @apply  font-['Dana-Bold'] text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[32px]  ;
+    }
+    .text4{
+        @apply text-center mt-2;
+    }
+    .text5{
+        @apply text4 sm:text-xl  font-['Dana-Bold'];
+    }
+    .text6{
+        @apply text4 sm:text-sm text-xs font-['Dana-Regular'];
+    }
+    .text7{
+        @apply text-[10px] sm:text-[12px] md:text-sm lg:text-2xl font-['Dana-Bold'] dark:text-zinc-300;
+    }
+    .text8{
+        @apply text-[9px] sm:text-[12px] md:text-base lg:text-lg dark:text-zinc-400;
+    }
+    .text9{
+        @apply text-[9px] sm:text-[12px] md:text-[16px] lg:text-[18px];
+    }
+    .BoxHover{
+        @apply BoxShadow1 hover:BoxShadow2 cursor-pointer
+    }
+    .Box1{
+        @apply md:p-4 p-2 BoxHover ;
+    }
+    .Box2{
+        @apply lg:py-2 lg:px-8 p-1.5 mb-4 md:mb-1 text-center BoxHover;
+    }
+    .itemBox1{
+        @apply BoxHover sm:pt-5 pt-2 md:w-32 md:h-32 sm:h-28 sm:w-28 h-24 w-24 border border-solid border-gray-700 bg-white dark:bg-zinc-200 ;
+    }
+    .itemsBox2{
+        @apply  md:w-48 md:h-48 w-32 w-32 dark:bg-zinc-200 dark:BoxHover ;
+    }
+    .itemsBox3{
+        @apply dark:bg-zinc-200 border border-solid border-gray-700  BoxShadow1
+    }
+    .img1{
+        @apply m-auto md:h-14 h-8 ;
+    }
+    .img2{
+        @apply m-auto sm:h-[70px] h-10 ;
+    }
+    .imgFooter{
+        @apply md:h-6 h-4
+    }
+    .slide{
+        @apply w-3/5 h-full  m-auto pt-12
+    }
+    .imgSlide{
+        @apply m-auto h-28
+    }
+    .name{
+        @apply text3 text-center pt-4
+    }
+    .desc{
+        @apply w-3/5 text3 text-center m-auto pt-4 text-gray-500
+    }
+}
