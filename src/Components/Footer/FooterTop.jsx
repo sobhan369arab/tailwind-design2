@@ -15,7 +15,9 @@ const FooterTop = () => {
                     <span>(+1) 546 54 54</span>
                     <img src="./Content/phone.png" alt="image" />
                 </div>
-                <div className="bg-Mustard Box1 w-4/5 mt-4 m-auto text-center">ارتباط با پشتیبان</div>
+                <div className="footerBox">ارتباط با پشتیبان</div>
+                <div dir="ltr" className="footerBox md:hidden ">دانلود اپلیکیشن</div>
+
             </div>
 
         </div>

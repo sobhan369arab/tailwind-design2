@@ -21,7 +21,7 @@ const PartDown = () => {
                 {items.map((item, index) => (
                     <AccordionItem key={index}>
                         <AccordionItemHeading >
-                            <AccordionItemButton className='itemsBox3 px-4 mt-6 h-20 flex flex-row-reverse justify-between items-center' >
+                            <AccordionItemButton className='itemsBox3 text-xs sm:text-lg px-4 mt-6 h-20 flex flex-row-reverse justify-between items-center' >
                                 <img src="./Content/arrow-down.png" alt="image" className='md:h-14 h-8' />
                                 {item.heading}
                             </AccordionItemButton>

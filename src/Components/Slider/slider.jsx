@@ -27,24 +27,24 @@ return(
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='slide'>
-            <img src="./Content/sobhan.jpg" alt="image" className='imgSlide' />
-            <p className='name'> سبحان</p>
-            <p className='desc'>واقعا دوره های فوق العاده ای داره اصلا حرف نداره  در خرید دوره ها شک نکنید</p>
+      <div className='slide'>
+            <img src="./Content/Frame-1.png" alt="image" className='m-auto' />
+            <p className='name'> کامیار منصوری</p>
+            <p className='desc'>دوره ها با کیفیت و پیشرفته بودند. این دوره ها را در هیچ کجا نخواهید یافت</p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='slide'>
-            <img src="./Content/amir.jpg" alt="image" className='imgSlide' />
-            <p className='name'> امیر</p>
-            <p className='desc'> من کلا نظر خاصی ندارم اگه دوست داشتین دوره هارو خریداری کنین</p>
+      <div className='slide'>
+            <img src="./Content/Frame-1.png" alt="image" className='m-auto' />
+            <p className='name'> کامیار منصوری</p>
+            <p className='desc'>دوره ها با کیفیت و پیشرفته بودند. این دوره ها را در هیچ کجا نخواهید یافت</p>
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        <div className='slide'>
-            <img src="./Content/sobhan.jpg" alt="image" className='imgSlide' />
-            <p className='name'> سبحان </p>
-            <p className='desc'> ببخشید یادم رفت اینو بگم  چه اپ خوشگلی طراحش واقعا حرفه ای بوده (:</p>
+      <div className='slide'>
+            <img src="./Content/Frame-1.png" alt="image" className='m-auto' />
+            <p className='name'> کامیار منصوری</p>
+            <p className='desc'>دوره ها با کیفیت و پیشرفته بودند. این دوره ها را در هیچ کجا نخواهید یافت</p>
         </div>
       </SwiperSlide>
      

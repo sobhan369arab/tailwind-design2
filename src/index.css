@@ -24,14 +24,17 @@
         @apply font-['Dana-Medium'] cursor-default relative  
     }
     .container{
-        @apply w-[75%] h-full m-auto;
+        @apply sm:w-[75%] w-[90%] h-full m-auto;
     }
 
     .text1{
-        @apply  font-['Dana-Bold'] sm:text-[32px] lg:text-[34px] xl:text-[40px] md:pt-2 pt-4 ;
+        @apply  font-['Dana-Bold'] sm:text-[32px] lg:text-[34px] xl:text-4xl text-4xl pt-2 md:mt-4   ;
+    }
+    .textBasis1{
+        @apply text-xs sm:text-sm
     }
     .text2{
-        @apply text-[8px] sm:text-[11px] md:text-sm lg:text-base;
+        @apply md:text-base ;
     }
     .text3{
         @apply  font-['Dana-Bold'] text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[32px]  ;
@@ -46,19 +49,19 @@
         @apply text4 sm:text-sm text-xs font-['Dana-Regular'];
     }
     .text7{
-        @apply text-[10px] sm:text-[12px] md:text-sm lg:text-2xl font-['Dana-Bold'] dark:text-zinc-300;
+        @apply  md:text-xl lg:text-2xl font-['Dana-Bold'] dark:text-zinc-300;
     }
     .text8{
-        @apply text-[9px] sm:text-[12px] md:text-base lg:text-lg dark:text-zinc-400;
+        @apply textBasis1 md:text-base lg:text-lg dark:text-zinc-400;
     }
     .text9{
-        @apply text-[9px] sm:text-[12px] md:text-[16px] lg:text-[18px];
+        @apply textBasis1 md:text-[16px] lg:text-[18px];
     }
     .BoxHover{
         @apply BoxShadow1 hover:BoxShadow2 cursor-pointer
     }
     .Box1{
-        @apply md:p-4 p-2 BoxHover ;
+        @apply md:p-3 md:inline-block    p-2 BoxHover ;
     }
     .Box2{
         @apply lg:py-2 lg:px-8 p-1.5 mb-4 md:mb-1 text-center BoxHover;
@@ -70,7 +73,10 @@
         @apply  md:w-48 md:h-48 w-32 w-32 dark:bg-zinc-200 dark:BoxHover ;
     }
     .itemsBox3{
-        @apply dark:bg-zinc-200 border border-solid border-gray-700  BoxShadow1
+        @apply dark:bg-zinc-200 border border-solid border-gray-700  BoxShadow1 bg-white
+    }
+    .footerBox{
+        @apply bg-Mustard Box1 w-4/5 mt-4 m-auto text-center
     }
     .img1{
         @apply m-auto md:h-14 h-8 ;
@@ -82,7 +88,7 @@
         @apply md:h-6 h-4
     }
     .slide{
-        @apply w-3/5 h-full  m-auto pt-12
+        @apply sm:w-3/5 w-4/5 h-full  m-auto pt-12
     }
     .imgSlide{
         @apply m-auto h-28
