@@ -3,7 +3,7 @@ const SectionTop = () => {
   return (
     <div>
         <div className=" sm:mt-20 mt-24 lg:w-[73%] w-full m-auto relative">
-            <h1 className="text3 text-center dark:text-zinc-300">دوره هایی که جایی پیدا نمیشه</h1>
+            <h1 className="text3 text-center dark:text-zinc-200">دوره هایی که جایی پیدا نمیشه</h1>
             <div className="flex flex-wrap justify-center xl:gap-20 lg:gap-6  gap-4 mt-12 relative z-50">
                 <div className="itemBox1">
                     <img src="./Content/apple.png" alt="image" className="img1" />

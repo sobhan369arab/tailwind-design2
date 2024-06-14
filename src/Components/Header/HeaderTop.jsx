@@ -5,7 +5,7 @@ const HeaderTop = () => {
   return (
     <div className="h-[20%] mb-3  md:flex md:justify-between md:flex-row-reverse md:items-center md:pt-0 pt-4  textBasis1    ">
       <div className=" sm:flex sm:items-center  justify-between flex-row-reverse">      
-        <div className="flex items-center justify-around xl:gap-6 sm:gap-4   cursor-pointer dark:text-zinc-300">
+        <div className="flex items-center justify-around xl:gap-6 sm:gap-4   cursor-pointer dark:text-zinc-200">
         <div onClick={() => screenLightController()} className="h-4  w-4 md:h-8 md:w-8 bg-[url('./darkMood.png')] dark:bg-[url('./lightMood.png')] bg-cover"> </div>
           <div className="p-1">
             <a href="#en" >EN </a>
@@ -21,7 +21,7 @@ const HeaderTop = () => {
           <img src="./logoHeader.png" alt="image" className=" h-6  lg:h-10 md:h-6 cursor-default lg:inline-block hidden" />
         </div>
       </div>
-      <div dir="ltr" className="bg-Mustard Box1  hidden ">دانلود اپلیکیشن</div>
+      <div dir="ltr" className="bg-Mustard Box1  hidden  ">دانلود اپلیکیشن</div>
     </div>
   )
 }

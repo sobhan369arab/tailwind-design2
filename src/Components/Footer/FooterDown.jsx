@@ -10,7 +10,7 @@ const FooterDown = () => {
                 <img src="./Content/insta.png" alt="image" className="imgFooter"/>
                 <img src="./Content/youtube.png" alt="image" className="imgFooter"/>
             </div>
-            <h1 dir="rtl" className="text-gray-600 text9">ما را در شبکه های اجتماعی دنبال کنید   |      </h1>
+            <h1 dir="rtl" className="text-gray-600 dark:text-zinc-300 text9">ما را در شبکه های اجتماعی دنبال کنید   |      </h1>
         </div>
         <img src="./Content/logo.png" alt="image" className="lg:block hidden"/>
         

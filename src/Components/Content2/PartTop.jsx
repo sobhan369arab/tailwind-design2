@@ -16,7 +16,7 @@ const PartTop = () => {
                 </div>
             </div>
             <div dir="rtl" className="sm:w-2/5 mr-8   relative">
-                <h1 className="text3 dark:text-zinc-300 pt-14">مهارت های خود را افزایش دهید</h1>
+                <h1 className="text3 dark:text-zinc-100 pt-14 ">مهارت های خود را افزایش دهید</h1>
                 <div className="pt-6">
                     <span className="text7"> کاتالوگ دوره های متنوع:</span>
                     <span className="text8"> مجموعه‌ای از دوره‌های گسترده از موضوعات و صنایع مختلف ارائه می‌دهد، تضمین می‌کند که شما می‌توانید دوره مناسبی را برای دستیابی به اهداف یادگیری خود پیدا کنید.</span>

@@ -9,13 +9,13 @@ import 'swiper/css/pagination';
 const Slider = ()=>{
 return(
     <div className="h-96"> 
-        <Swiper className='w-full h-full bg-blue-100' 
+        <Swiper className='w-full h-full bg-blue-100 dark:bg-zinc-700 ' 
     modules={[Navigation, Pagination,A11y]}
       spaceBetween={50}
       slidesPerView={1}
       navigation
       pagination={{ clickable: true }}
-    //   scrollbar={{ draggable: true }}
+      scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >

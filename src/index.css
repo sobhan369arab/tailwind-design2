@@ -19,6 +19,7 @@
 @layer utilities{
     .BoxShadow1{ box-shadow: 4px 4px 0px 0px #444; transition: 0.2s;}
     .BoxShadow2{ box-shadow: 3px 2px 1px 0px #222; transition: 0.1s;}
+    .BoxShadow3{ box-shadow: 0px 45px 50px 20px #777 inset ,4px 4px 0px 0px #555; }
 
     .all{
         @apply font-['Dana-Medium'] cursor-default relative  
@@ -37,19 +38,19 @@
         @apply md:text-base ;
     }
     .text3{
-        @apply  font-['Dana-Bold'] text-[16px] sm:text-[20px] lg:text-[28px] xl:text-[32px]  ;
+        @apply  font-['Dana-Bold'] text-[18px] sm:text-[20px] lg:text-[28px] xl:text-[32px]  ;
     }
     .text4{
-        @apply text-center mt-2;
+        @apply text-center mt-2 ;
     }
     .text5{
-        @apply text4 sm:text-xl  font-['Dana-Bold'];
+        @apply text4 sm:text-xl  font-['Dana-Bold'] dark:text-zinc-300;
     }
     .text6{
-        @apply text4 sm:text-sm text-xs font-['Dana-Regular'];
+        @apply text4 sm:text-sm text-xs font-['Dana-Regular'] dark:text-zinc-300;
     }
     .text7{
-        @apply  md:text-xl lg:text-2xl font-['Dana-Bold'] dark:text-zinc-300;
+        @apply  md:text-xl lg:text-2xl font-['Dana-Bold'] dark:text-zinc-200;
     }
     .text8{
         @apply textBasis1 md:text-base lg:text-lg dark:text-zinc-400;
@@ -60,6 +61,9 @@
     .BoxHover{
         @apply BoxShadow1 hover:BoxShadow2 cursor-pointer
     }
+    .BoxHover2{
+        @apply BoxShadow1 hover:BoxShadow2 cursor-pointer
+    }
     .Box1{
         @apply md:p-3 md:inline-block    p-2 BoxHover ;
     }
@@ -67,13 +71,13 @@
         @apply lg:py-2 lg:px-8 p-1.5 mb-4 md:mb-1 text-center BoxHover;
     }
     .itemBox1{
-        @apply BoxHover sm:pt-5 pt-2 md:w-32 md:h-32 sm:h-28 sm:w-28 h-24 w-24 border border-solid border-gray-700 bg-white dark:bg-zinc-200 ;
+        @apply BoxHover sm:pt-5 pt-2 md:w-32 md:h-32 sm:h-28 sm:w-28 h-24 w-24 border border-solid border-gray-700 bg-white dark:bg-neutral-500 ;
     }
     .itemsBox2{
-        @apply  md:w-48 md:h-48 w-32 w-32 dark:bg-zinc-200 dark:BoxHover ;
+        @apply  md:w-48 md:h-48 w-32 w-32  dark:BoxShadow3 ;
     }
     .itemsBox3{
-        @apply dark:bg-zinc-200 border border-solid border-gray-700  BoxShadow1 bg-white
+        @apply dark:bg-neutral-500 border border-solid border-gray-700  BoxShadow1 bg-white
     }
     .footerBox{
         @apply bg-Mustard Box1 w-4/5 mt-4 m-auto text-center
@@ -94,9 +98,9 @@
         @apply m-auto h-28
     }
     .name{
-        @apply text3 text-center pt-4
+        @apply text3 text-center pt-4 dark:text-zinc-200
     }
     .desc{
-        @apply w-3/5 text3 text-center m-auto pt-4 text-gray-500
+        @apply w-3/5 text3 text-center m-auto pt-4 text-gray-400 
     }
 }
