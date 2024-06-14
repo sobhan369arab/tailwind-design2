@@ -26,7 +26,7 @@ const PartDown = () => {
                                 {item.heading}
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel className='text9 3 px-4 mt-4 bg-blue-200 text-gray-800  leading-[40px] '>
+                        <AccordionItemPanel className='text9 py-3 px-4 mt-4 bg-blue-200 dark:bg-zinc-300 text-gray-800  leading-[40px] '>
                             {item.content}
                         </AccordionItemPanel>
                     </AccordionItem>
