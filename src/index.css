@@ -56,7 +56,7 @@
         @apply textBasis1 md:text-base lg:text-lg dark:text-zinc-400;
     }
     .text9{
-        @apply textBasis1 md:text-[16px] lg:text-[18px];
+        @apply textBasis1 md:text-sm lg:text-lg;
     }
     .BoxHover{
         @apply BoxShadow1 hover:BoxShadow2 cursor-pointer
