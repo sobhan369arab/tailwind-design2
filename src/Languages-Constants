@@ -1,0 +1,4 @@
+export const LANGUAGES = [
+  { label: "Persian", code: "fa" },
+  { label: "English", code: "en" },
+];

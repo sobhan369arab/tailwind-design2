@@ -47,7 +47,7 @@
         @apply text4 sm:text-xl  font-['Dana-Bold'] dark:text-zinc-300;
     }
     .text6{
-        @apply text4 sm:text-sm text-xs font-['Dana-Regular'] dark:text-zinc-300;
+        @apply text4 textBasis1 font-['Dana-Regular'] dark:text-zinc-300;
     }
     .text7{
         @apply  md:text-xl lg:text-2xl font-['Dana-Bold'] dark:text-zinc-200;
@@ -71,7 +71,7 @@
         @apply lg:py-2 lg:px-8 p-1.5 mb-4 md:mb-1 text-center BoxHover;
     }
     .itemBox1{
-        @apply BoxHover sm:pt-5 pt-2 md:w-32 md:h-32 sm:h-28 sm:w-28 h-24 w-24 border border-solid border-gray-700 bg-white dark:bg-neutral-500 ;
+        @apply BoxHover sm:pt-4 pt-2 md:w-32 md:h-32 sm:h-28 sm:w-28 h-24 w-24 border border-solid border-gray-700 bg-white dark:bg-neutral-500 ;
     }
     .itemsBox2{
         @apply  md:w-48 md:h-48 w-32 w-32  dark:BoxShadow3 ;

@@ -1,7 +1,18 @@
+import { useState } from "react"
+import ItemsContent3 from "./itemsContent3";
+import { useTranslation } from "react-i18next";
+
 
 const PartTop = () => {
+    const { t } = useTranslation();
+    const [items4] = useState([
+        { title4: "PartTop_title1", desc4: "PartTop_desc1"},
+        { title4: "PartTop_title2", desc4: "PartTop_desc2"},
+        { title4: "PartTop_title3", desc4: "PartTop_desc3"},     
+    ]);
+
     return (
-        <div className=" sm:flex justify-between ">
+        <div dir="ltr" className=" sm:flex justify-between ">
             <div className="sm:w-1/2  relative ">
                 <div className="w-4/5 grid md:grid-cols-2 grid-cols-3 gap-4 m-auto mt-8">
                     <div className=" py-16 h-56  itemsBox3">
@@ -16,20 +27,16 @@ const PartTop = () => {
                 </div>
             </div>
             <div dir="rtl" className="sm:w-2/5 mr-8   relative">
-                <h1 className="text3 dark:text-zinc-100 pt-14 ">مهارت های خود را افزایش دهید</h1>
-                <div className="pt-6">
-                    <span className="text7"> کاتالوگ دوره های متنوع:</span>
-                    <span className="text8"> مجموعه‌ای از دوره‌های گسترده از موضوعات و صنایع مختلف ارائه می‌دهد، تضمین می‌کند که شما می‌توانید دوره مناسبی را برای دستیابی به اهداف یادگیری خود پیدا کنید.</span>
-                </div>
-                <div className="pt-6">
-                    <span className="text7"> مدرسان ماهر:</span>
-                    <span className="text8">  تمام دوره‌ها توسط متخصصان صنعت و حرفه‌ای‌های با تجربه تدریس می‌شوند، به شما دانش عملی و راهنمایی‌های ارزشمندی ارائه می‌دهند.</span>
-
-                </div>
-                <div className="pt-6">
-                    <span className="text7"> یادگیری انعطاف پذیر:</span>
-                    <span className="text8">  شما می‌توانید به دوره‌ها  از هر مکان و زمانی دسترسی داشته باشید، که این امکان را فراهم می‌کند که یادگیری را به برنامه‌ی زمانی خود تنظیم کنید.</span>
-                </div>
+                <h1 className="text3 dark:text-zinc-100 pt-14 ">{t("PartTop_text")}</h1>
+                {items4.map((item, index) => {
+                        return (
+                            <ItemsContent3
+                            key={index}
+                            title={item.title4}
+                            desc={item.desc4}
+                            />
+                        )
+                    })}
             </div>
         </div>
     )

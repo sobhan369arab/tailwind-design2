@@ -1,29 +1,28 @@
+import { useState } from "react"
+import ItemsContent2 from "./itemsContent2";
 
 const SectionDown = () => {
+
+    const [item2] = useState([
+        { title2: "SectionDownText1", desc2: "SectionDownText11", img2: "./Content/1.png" },
+        { title2: "SectionDownText2", desc2:"SectionDownText22", img2: "./Content/2.png" },
+        { title2: "SectionDownText3", desc2: "SectionDownText33", img2: "./Content/3.png" },
+        { title2: "SectionDownText4", desc2: "SectionDownText44", img2: "./Content/4.png" }
+     
+    ]);
     return (
         <div>
             <div className="my-28 flex flex-wrap justify-around relative gap-y-4 ">
-                <div className=" itemsBox2 py-5 px-6  ">
-                    <img src="./Content/1.png" alt="image" className="img2"/>
-                    <h1 className="text5">پرداخت اقساطی</h1>
-                    <h1 className="text6">مقرون به صرفه بودن قیمت ها</h1>
-                </div>
-                <div className="itemsBox2 py-5 px-2">
-                    <img src="./Content/2.png" alt="image" className="img2" />
-                    <h1 className="text5">دوره های با کیفیت</h1>
-                    <h1 className="text6">بهترین اساتید و مدرسین</h1>
-                </div>
-                <div className="itemsBox2  py-5 px-6 ">
-                    <img src="./Content/3.png" alt="image" className="img2" />
-                    <h1 className="text5">تماما آنلاین</h1>
-                    <h1 className="text6">همه روزه و 24ساعته ببینید</h1>
-                </div>
-                <div className="itemsBox2  py-5 px-2 ">
-                    <img src="./Content/4.png" alt="image" className="img2" />
-                    <h1 className="text5">صرفه جویی در زمان</h1>
-                    <h1 className="text6">روی خودتان به درستی سرمایه گذاری کنید</h1>
-                </div>
-
+                {item2.map((item, index) =>{
+                    return(
+                    <ItemsContent2
+                    key={index}
+                    title={item.title2}
+                    desc={item.desc2}
+                    img={item.img2}
+                    />
+                    )
+                })}
             </div>
         </div>
     )
